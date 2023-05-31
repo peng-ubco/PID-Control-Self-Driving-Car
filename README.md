@@ -8,4 +8,4 @@ Different motion models are provided in the simulator to mimick various driving 
 
 By running the "car_controller_pid.py", you can get the following demonstrations.
 
-![alt text](result_demo.gif)
+![alt text](result_demo.gif) 
