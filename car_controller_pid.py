@@ -6,17 +6,12 @@ import matplotlib.patches as mpatches
 import time
 import motion_models
 
-# Simulator options.
-sim_opt = {}
-sim_opt['FIG_SIZE'] = [8, 8]
-
-
 motion_model = motion_models.motion_model_3
 
-def run_sim(sim_opt):
+def run_sim():
     start = time.process_time()
     # Simulator Options
-    FIG_SIZE = sim_opt['FIG_SIZE']  # [Width, Height]
+    FIG_SIZE = [6, 6]  # [Width, Height]
 
     # initialize the control input
     num_inputs = 2
@@ -26,8 +21,8 @@ def run_sim(sim_opt):
     ref = [8, 0, 0]
     state_i = np.array([[1, 0, 0, 0]])
     u_i = np.array([[0, 0]])
-    sim_total = 500
-    dt = 0.2  # Total simulation time = sim_total * dt
+    sim_total = 150
+    dt = 0.1  # Total simulation time = sim_total * dt
 
     '''your code here'''
     '''***********************************************'''
@@ -159,4 +154,4 @@ def run_sim(sim_opt):
 
     plt.show()
 
-run_sim(sim_opt)
+run_sim()
